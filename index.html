@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FleXXX</title>
+<style media="screen">
+	* {box-sizing: border-box;}
+body {
+    font-family: 'Open Sans', sans-serif;
+			background-color: yellow;
+}
+h1, h2{
+    text-align: center;
+}
+		.flex-container {
+  display: flex;
+	flex-direction: row;
+	
+  
+}
+.flex-container > div {
+	
+  background-color: red;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.flex-container {
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+
+.flex-container div {
+    width: 200px;
+    height: 200px;
+    text-align:center;
+    flex-basis: 600px;
+}
+	div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink:2;
+		background-color: grey
+}
+	div:nth-of-type(2) {
+    flex-grow: 2;
+		background-color: white
+		
+}
+	div:nth-of-type(3){
+		background:blue;
+	}
+	@media (max-width: 800px){
+	h1
+		{color:orange}
+	}
+	@media screen and (max-width: 800px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  
+  
+}
+
+
+
+</style>
+</head>
+<body>
+	
+
+<h1>This is my FLEXBOX!</h1>
+	<div class="flex-container">
+  <div>ONE!</div>
+  <div>TWO!</div>
+  <div>THREE!</div>
+  <div>FOUR!</div>
+</div>
+<p>blah blah blah</p>
+
+</body>
+</html>
