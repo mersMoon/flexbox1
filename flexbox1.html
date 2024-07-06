@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.flex-container {
+  display: flex;
+	
+  background-color:black;
+}
+
+.flex-container > div {
+  background-color: red;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+body {
+	flex-direction: row;
+  background-color: red;
+}
+
+@media screen and (min-width: 480px) 
+{
+	body {background-color: blueviolet;}
+	.flex-container {flex-direction: column;}
+  
+}
+</style>
+</head>
+<body>
+	
+
+<h1>This is my FLEXBOX!</h1>
+	<div class="flex-container">
+  <div>UNO!</div>
+  <div>DOS!</div>
+  <div>TRES!</div>
+</div>
+<p>Try making the window smaller!</p>
+
+</body>
+</html>
