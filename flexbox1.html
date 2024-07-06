@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+<style media="screen">
+	* {box-sizing: border-box;}
+	
+.container{
+	width:1020px;
+	margin:0 auto;
+	background-color: black;
+}	
 
 .flex-container {
   display: flex;
+	flex-direction: row;
 	
   background-color:black;
 }
@@ -23,7 +31,7 @@ body {
 
 @media screen and (min-width: 480px) 
 {
-	body {background-color: blueviolet;}
+	body {background-color: yellow;}
 	.flex-container {flex-direction: column;}
   
 }
@@ -38,7 +46,7 @@ body {
   <div>DOS!</div>
   <div>TRES!</div>
 </div>
-<p>Try making the window smaller!</p>
+<p>Try making the window smaller! The color should change and the rows turn into columns!</p>
 
 </body>
 </html>
