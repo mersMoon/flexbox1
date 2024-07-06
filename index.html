@@ -70,18 +70,35 @@ h1, h2{
 
 
 </style>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#mylittlebox" ).dialog();
+  } );
+  </script>
 </head>
 <body>
 	
-
+<div id="mylittlebox" title="Beware! ">
+  <p>There are alot of bright colors on this page. Put on your shades!</p>
+</div>
 <h1>This is my FLEXBOX!</h1>
 	<div class="flex-container">
-  <div>ONE!</div>
-  <div>TWO!</div>
-  <div>THREE!</div>
-  <div>FOUR!</div>
+  <div>ONE!
+		<ul><li>UNO</li>
+</ul></div>
+  <div>TWO!
+		<ul><li>DOS</li></ul></div>
+  <div>THREE!
+		<ul><li>TRES</li></ul></div>
+  <div>FOUR!
+		<ul><li>CUATRO</li></ul></div>
 </div>
-<p>blah blah blah</p>
+<p>blah blah blah</p><br>
+	<p>Minimize the screen and the header turns orange!</p>
 
 </body>
 </html>
